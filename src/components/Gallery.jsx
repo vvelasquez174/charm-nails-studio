@@ -20,18 +20,15 @@ function useColumnCount() {
   return count
 }
 
-function PlaceholderTile({ label, ratio }) {
+// Espacio vacío para una foto futura (se llena desde src/data/site.js → galleryImages)
+function PlaceholderTile({ ratio }) {
   return (
     <div
       style={{ aspectRatio: ratio }}
-      className="flex flex-col items-center justify-center gap-3 rounded-[1.25rem] border border-dashed border-gold/60 bg-gradient-to-br from-ivory via-sand/70 to-taupe/50 p-4 text-center"
-      role="img"
-      aria-label={`Espacio reservado para foto: ${label}`}
+      className="flex items-center justify-center rounded-[1.25rem] border border-gold/30 bg-gradient-to-br from-ivory via-sand/60 to-taupe/40"
+      aria-hidden="true"
     >
-      <FloralMark className="h-10 w-10 text-gold" />
-      <span className="font-serif text-xl text-espresso">{label}</span>
-      {/* PENDIENTE: sustituir por foto real en src/data/site.js → galleryImages */}
-      <span className="text-[0.58rem] font-semibold tracking-[0.24em] text-gold-deep uppercase">Foto próximamente</span>
+      <FloralMark className="h-8 w-8 text-gold/35" />
     </div>
   )
 }
@@ -150,10 +147,10 @@ export default function Gallery() {
         <div className="mt-14 flex items-start gap-3 sm:gap-5">
           {columns.map((column, c) => (
             <div key={c} className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-5">
-              {column.map((item) => (
-                <Reveal key={item.src ?? item.label} variant="scale" delay={0.05 + c * 0.1}>
+              {column.map((item, j) => (
+                <Reveal key={item.src ?? `vacio-${c}-${j}`} variant="scale" delay={0.05 + c * 0.1}>
                   {item.placeholder ? (
-                    <PlaceholderTile label={item.label} ratio={item.ratio} />
+                    <PlaceholderTile ratio={item.ratio} />
                   ) : (
                     <button
                       type="button"

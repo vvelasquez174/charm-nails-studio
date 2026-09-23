@@ -30,7 +30,7 @@ Todo el texto, los enlaces y las fotos viven en `src/data/site.js`:
 - **Horarios**: `business.hours` → mientras sea `null` se muestra "Consulta disponibilidad por WhatsApp".
 - **Instagram / Facebook**: `business.social` → solo aparecen en el footer cuando tienen URL.
 - **Logo en alta resolución**: `business.logoSrc` → mientras sea `null` se usa el logotipo tipográfico con la flor.
-- **Fotos de la galería**: 3 espacios marcados "Foto próximamente" (`placeholder: true`). Para cambiarlos:
+- **Fotos de la galería**: los 9 espacios están vacíos (`placeholder: true`). Para cambiarlos:
   coloca `mi-foto.jpg` y `mi-foto.webp` en `public/media/` y reemplaza el elemento por
   `{ src: '/media/mi-foto', alt: 'Descripción', ratio: '4/5' }`.
 - **Dominio**: descomentar `<link rel="canonical">` en `index.html` y usar URLs absolutas en `og:image` / JSON-LD.

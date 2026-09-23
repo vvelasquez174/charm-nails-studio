@@ -132,17 +132,20 @@ export const featureImages = {
   finalCta: { src: '/media/modelo-verde-esmeralda', alt: 'Mujer sonriente mostrando sus uñas en color verde esmeralda' },
 }
 
-// Galería: `src` sin extensión → se sirven .webp con respaldo .jpg.
-// Para sustituir, agrega la foto a /public/media y cambia `src` y `alt`.
-// Los elementos con `placeholder: true` son espacios reservados para fotos reales.
+// Galería: por ahora todos los espacios están vacíos (`placeholder: true`).
+// Para agregar una foto: colócala en /public/media como nombre.jpg y nombre.webp y cambia el espacio por
+//   { src: '/media/nombre', alt: 'Descripción de la foto', ratio: '4/5' }
+// (`src` va sin extensión; `ratio` es la proporción ancho/alto de la foto).
+// Fotos ya disponibles en /public/media: unas-chrome-dorado-editorial, unas-blanco, pedicure-rojo,
+// unas-chrome-dorado-detalle, pedicure-rojo-detalle, unas-blanco-detalle, modelo-verde-manos.
 export const galleryImages = [
-  { src: '/media/unas-chrome-dorado-editorial', alt: 'Manicure chrome dorado en tonos nude', ratio: '4/3' },
-  { src: '/media/unas-blanco', alt: 'Uñas blancas en gel con forma cuadrada', ratio: '720/836' },
-  { src: '/media/pedicure-rojo', alt: 'Pedicure rojo con brillo intenso', ratio: '1/1' },
-  { src: '/media/unas-chrome-dorado-detalle', alt: 'Detalle de uñas con efecto chrome dorado', ratio: '5/4' },
-  { src: '/media/pedicure-rojo-detalle', alt: 'Detalle de pedicure en rojo', ratio: '8/7' },
-  { src: '/media/unas-blanco-detalle', alt: 'Detalle de uñas blancas con acabado brillante', ratio: '46/42' },
-  { src: '/media/modelo-verde-manos', alt: 'Manicure en verde esmeralda con acabado brillante', ratio: '670/560' },
-  { placeholder: true, label: 'Uñas rosas', ratio: '1/1' },
-  { placeholder: true, label: 'Nude elegante', ratio: '1/1' },
+  { placeholder: true, ratio: '4/5' },
+  { placeholder: true, ratio: '1/1' },
+  { placeholder: true, ratio: '4/5' },
+  { placeholder: true, ratio: '1/1' },
+  { placeholder: true, ratio: '4/5' },
+  { placeholder: true, ratio: '1/1' },
+  { placeholder: true, ratio: '4/5' },
+  { placeholder: true, ratio: '1/1' },
+  { placeholder: true, ratio: '4/5' },
 ]
