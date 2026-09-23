@@ -1,0 +1,31 @@
+{
+  "name": "charm-nails-studio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "media": "npm i --no-save sharp ffmpeg-static && node scripts/prepare-media.mjs",
+    "start": "serve dist -s -l tcp://0.0.0.0:${PORT:-3000}"
+  },
+  "license": "ISC",
+  "description": "Landing page de Charm Nails Studio (Monterrey)",
+  "dependencies": {
+    "framer-motion": "^13.4.1",
+    "lucide-react": "^1.47.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "serve": "^14.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
