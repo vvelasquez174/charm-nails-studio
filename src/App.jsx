@@ -7,6 +7,7 @@ import Services from './components/Services'
 import Gallery from './components/Gallery'
 import Experience from './components/Experience'
 import Benefits from './components/Benefits'
+import Reviews from './components/Reviews'
 import BrandStatement from './components/BrandStatement'
 import Location from './components/Location'
 import FinalCTA from './components/FinalCTA'
@@ -25,6 +26,7 @@ export default function App() {
         <Gallery />
         <Experience />
         <Benefits />
+        <Reviews />
         <BrandStatement />
         <Location />
         <FinalCTA />

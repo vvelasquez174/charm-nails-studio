@@ -103,6 +103,21 @@ export const benefits = [
   { title: 'Ubicación en Monterrey', icon: 'MapPin' },
 ]
 
+// Reseñas REALES de clientas (con su permiso). Solo estas se publican.
+// Formato: { name: 'Ana G.', service: 'Nivelación + color gel', text: '…', rating: 5 }
+export const reviews = []
+
+// PENDIENTE: enlace para dejar reseña en Google (perfil de Google Business). Si está vacío no se muestra.
+export const reviewLink = ''
+
+// Textos de EJEMPLO solo para previsualizar el diseño en `npm run dev`.
+// Nunca se muestran en el sitio publicado.
+export const sampleReviews = [
+  { name: 'Clienta de ejemplo', service: 'Nivelación + color gel', text: 'Aquí va el comentario de una clienta sobre su experiencia en Charm Nails Studio.', rating: 5 },
+  { name: 'Clienta de ejemplo', service: 'Diseños', text: 'Reseña breve que describa el servicio, la atención y el resultado de sus uñas.', rating: 5 },
+  { name: 'Clienta de ejemplo', service: 'Manicure', text: 'Una o dos líneas bastan: lo que más le gustó y si volvería a agendar.', rating: 5 },
+]
+
 // Fondo animado (video vertical provisto por el negocio)
 export const backgroundVideo = {
   src: '/media/fondo-floral.mp4',
