@@ -21,6 +21,9 @@ const crops = [
   { src: 'scripts/src-red.jpg', name: 'pedicure-rojo-detalle', extract: { left: 160, top: 380, width: 640, height: 560 } },
   // Blanco: detalle
   { src: 'scripts/src-white.jpg', name: 'unas-blanco-detalle', extract: { left: 180, top: 640, width: 460, height: 420 } },
+  // Modelo con uñas verde esmeralda (retrato vertical y detalle de manos)
+  { src: 'scripts/src-modelo.jpg', name: 'modelo-verde-esmeralda', extract: { left: 0, top: 150, width: 768, height: 1060 } },
+  { src: 'scripts/src-modelo.jpg', name: 'modelo-verde-manos', extract: { left: 80, top: 590, width: 670, height: 560 } },
 ]
 
 for (const c of crops) {

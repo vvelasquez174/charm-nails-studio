@@ -109,11 +109,12 @@ export const backgroundVideo = {
   poster: '/media/fondo-floral-poster.jpg',
 }
 
-// Fotos del hero y de la promoción
+// Fotos del hero, la promoción, los beneficios y el CTA final
 export const featureImages = {
   hero: { src: '/media/unas-chrome-dorado', alt: 'Manicure con efecto chrome dorado sobre uñas cortas y cuadradas' },
   promotion: { src: '/media/unas-blanco', alt: 'Uñas en color gel blanco con forma cuadrada y acabado brillante' },
   benefits: { src: '/media/pedicure-rojo', alt: 'Pedicure en color rojo intenso con acabado brillante' },
+  finalCta: { src: '/media/modelo-verde-esmeralda', alt: 'Mujer sonriente mostrando sus uñas en color verde esmeralda' },
 }
 
 // Galería: `src` sin extensión → se sirven .webp con respaldo .jpg.
@@ -126,7 +127,7 @@ export const galleryImages = [
   { src: '/media/unas-chrome-dorado-detalle', alt: 'Detalle de uñas con efecto chrome dorado', ratio: '5/4' },
   { src: '/media/pedicure-rojo-detalle', alt: 'Detalle de pedicure en rojo', ratio: '8/7' },
   { src: '/media/unas-blanco-detalle', alt: 'Detalle de uñas blancas con acabado brillante', ratio: '46/42' },
+  { src: '/media/modelo-verde-manos', alt: 'Manicure en verde esmeralda con acabado brillante', ratio: '670/560' },
   { placeholder: true, label: 'Uñas rosas', ratio: '1/1' },
-  { placeholder: true, label: 'Nail art', ratio: '1/1' },
   { placeholder: true, label: 'Nude elegante', ratio: '1/1' },
 ]
